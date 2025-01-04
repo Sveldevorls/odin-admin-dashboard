@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    grid-template-columns: minmax(225px, 1fr) 4fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas: "sd tp"
+                         "sd mn";
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+path {
+    fill: white;
+}
+
+.side {
+    color: whitesmoke;
+    padding: 5%;
+    font-size: 1.3rem;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rlh;
+}
+
+.side a,
+.side div {
+    height: 2rlh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.side svg {
+    height: 70%;
+    justify-self: center;
+}
+
+.side a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.title {
+    font-size: 1.25em;
+}
+
+svg.title{
+    height: 100%;
+}
+
+
+
+/* grid area */
+
+.side {
+    grid-area: sd;
+    background-color: rgb(22, 121, 228);
+}
+
+.top {
+    grid-area: tp;
+    background-color: white;
+}
+
+.main {
+    grid-area: mn;
+    background-color: whitesmoke;
+}
